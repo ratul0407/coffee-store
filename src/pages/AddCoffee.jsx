@@ -25,13 +25,16 @@ function AddCoffee() {
     const newCoffee = { name, chef, details, supplier, taste, category, photo };
     console.log(newCoffee);
 
-    fetch("http://localhost:5000/coffee", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(newCoffee),
-    })
+    fetch(
+      "https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/coffee",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(newCoffee),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {

@@ -30,13 +30,16 @@ function UpdateCoffee() {
     };
     console.log(updatedCoffee);
 
-    fetch(`http://localhost:5000/coffee/${_id}`, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(updatedCoffee),
-    })
+    fetch(
+      `https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/coffee/${_id}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(updatedCoffee),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

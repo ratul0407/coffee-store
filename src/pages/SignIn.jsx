@@ -16,13 +16,16 @@ function SignIn() {
         const lastSignInTime = res?.user?.metadata?.lastSignInTime;
         console.log(lastSignInTime);
         const loginInfo = { email, lastSignInTime };
-        fetch(`http://localhost:5000/users`, {
-          method: "PATCH",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(loginInfo),
-        })
+        fetch(
+          `https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/users`,
+          {
+            method: "PATCH",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify(loginInfo),
+          }
+        )
           .then((res) => res.json())
           .then((data) => console.log(data));
       })
