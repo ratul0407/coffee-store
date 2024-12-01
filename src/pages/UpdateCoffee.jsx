@@ -31,7 +31,7 @@ function UpdateCoffee() {
     console.log(updatedCoffee);
 
     fetch(
-      `https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/coffee/${_id}`,
+      `https://coffee-store-server-8629nprmk-ratuls-projects-4bca9837.vercel.app/coffee/${_id}`,
       {
         method: "PUT",
         headers: {

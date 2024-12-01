@@ -19,7 +19,7 @@ function Users() {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/users/${id}`,
+          `https://coffee-store-server-8629nprmk-ratuls-projects-4bca9837.vercel.app/users/${id}`,
           {
             method: "DELETE",
           }

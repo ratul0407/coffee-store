@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         element: <Home />,
         loader: () =>
           fetch(
-            "https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/coffee"
+            "https://coffee-store-server-8629nprmk-ratuls-projects-4bca9837.vercel.app/coffee"
           ),
       },
       {
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <UpdateCoffee />,
         loader: ({ params }) =>
           fetch(
-            `https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/coffee/${params.id}`
+            `https://coffee-store-server-8629nprmk-ratuls-projects-4bca9837.vercel.app/coffee/${params.id}`
           ),
       },
     ],
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
     element: <Users />,
     loader: () =>
       fetch(
-        "https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/users"
+        "https://coffee-store-server-8629nprmk-ratuls-projects-4bca9837.vercel.app/users"
       ),
   },
 ]);

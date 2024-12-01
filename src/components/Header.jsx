@@ -10,7 +10,7 @@ function Header() {
           Users
         </Link>
         <Link to="/signup" className="btn btn-success font-raleway">
-          Sign UP
+          Sign UP or Register
         </Link>
         <Link to="/signin" className="btn btn-success font-raleway">
           Sign In

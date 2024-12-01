@@ -17,7 +17,7 @@ function SignIn() {
         console.log(lastSignInTime);
         const loginInfo = { email, lastSignInTime };
         fetch(
-          `https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/users`,
+          `https://coffee-store-server-8629nprmk-ratuls-projects-4bca9837.vercel.app/users`,
           {
             method: "PATCH",
             headers: {

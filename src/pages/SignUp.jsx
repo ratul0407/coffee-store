@@ -18,7 +18,7 @@ function SignUp() {
         console.log(res.user);
         //save new user info to the database
         fetch(
-          "https://coffee-store-server-6suxlgpnf-ratuls-projects-4bca9837.vercel.app/users",
+          "https://coffee-store-server-8629nprmk-ratuls-projects-4bca9837.vercel.app/users",
           {
             method: "POST",
             headers: {
